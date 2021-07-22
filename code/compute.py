@@ -125,12 +125,25 @@ def letterSort():
 def fingerDis_pic():
     totDis=letterSort()
     totDis.append(0)
+    [times, rate] = letterRate()
+    y_axis=[]
+    y_axis.append(times['q']+times['a']+times['z'])
+    y_axis.append(times['w'] + times['s'] + times['x'])
+    y_axis.append(times['e'] + times['d'] + times['c'])
+    y_axis.append(times['r'] + times['f'] + times['v']+times['t'] + times['g'] + times['b'])
+    y_axis.append(times['y'] + times['h'] + times['n'] + times['u'] + times['j'] + times['m'])
+    y_axis.append(times['i'] + times['k'] )
+    y_axis.append(times['o'] + times['l'] )
+    y_axis.append(times['p'] )
     x_axis=["左手小指","左手无名指","左手中指","左手食指","右手食指","右手中指","右手无名指","右手小指"]
     c = (
         Bar({"theme": ThemeType.MACARONS})
         .add_xaxis(x_axis)
         .add_yaxis(
             "手指移动距离",totDis
+        )
+        .add_yaxis(
+            "手指敲击次数",y_axis
         )
         .set_global_opts(
         title_opts={"text": "手指移动距离直方图"}

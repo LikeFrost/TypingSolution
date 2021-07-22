@@ -31,6 +31,16 @@ def getCodenum():
 
 def Rate_pic():
     Num=getCodenum()
+    num=[]
+    num.append(Num['g']+Num['n'])
+    num.append(Num['f'] + Num['c'])
+    num.append(Num['h'] + Num['e'])
+    num.append(Num['j'] + Num['a'])
+    num.append(Num['b'] + Num['j'])
+    num.append(Num['o'] + Num['m'])
+    num.append(Num['k'] + Num['d'])
+    num.append(Num['l'] + Num['p'])
+    print(num)
     y_axis1=[]
     for i in Num.values():
         y_axis1.append(i)
