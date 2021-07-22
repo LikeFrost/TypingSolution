@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+</head>
+<body>
+    <div id="5f6d4571d2714defa0c736932ef8ad8e" class="chart-container" style="width:1200px; height:400px;"></div>
+    <script>
+        var chart_5f6d4571d2714defa0c736932ef8ad8e = echarts.init(
+            document.getElementById('5f6d4571d2714defa0c736932ef8ad8e'), 'white', {renderer: 'canvas'});
+        var option_5f6d4571d2714defa0c736932ef8ad8e = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "heatmap",
+            "name": "\u5b57\u6bcd\u51fa\u73b0\u6b21\u6570",
+            "data": [
+                [
+                    0,
+                    2,
+                    441
+                ],
+                [
+                    1,
+                    2,
+                    448
+                ],
+                [
+                    2,
+                    2,
+                    5293
+                ],
+                [
+                    3,
+                    2,
+                    423
+                ],
+                [
+                    4,
+                    2,
+                    631
+                ],
+                [
+                    5,
+                    2,
+                    1511
+                ],
+                [
+                    6,
+                    2,
+                    3671
+                ],
+                [
+                    7,
+                    2,
+                    7463
+                ],
+                [
+                    8,
+                    2,
+                    2748
+                ],
+                [
+                    9,
+                    2,
+                    136
+                ],
+                [
+                    0,
+                    1,
+                    4407
+                ],
+                [
+                    1,
+                    1,
+                    1562
+                ],
+                [
+                    2,
+                    1,
+                    2427
+                ],
+                [
+                    3,
+                    1,
+                    434
+                ],
+                [
+                    4,
+                    1,
+                    3624
+                ],
+                [
+                    5,
+                    1,
+                    4320
+                ],
+                [
+                    6,
+                    1,
+                    1731
+                ],
+                [
+                    7,
+                    1,
+                    167
+                ],
+                [
+                    8,
+                    1,
+                    816
+                ],
+                [
+                    9,
+                    1,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    1,
+                    0,
+                    2252
+                ],
+                [
+                    2,
+                    0,
+                    809
+                ],
+                [
+                    3,
+                    0,
+                    1047
+                ],
+                [
+                    4,
+                    0,
+                    27
+                ],
+                [
+                    5,
+                    0,
+                    710
+                ],
+                [
+                    6,
+                    0,
+                    5767
+                ],
+                [
+                    7,
+                    0,
+                    617
+                ],
+                [
+                    8,
+                    0,
+                    0
+                ],
+                [
+                    9,
+                    0,
+                    0
+                ]
+            ],
+            "label": {
+                "show": true,
+                "position": "inside",
+                "margin": 8,
+                "fontSize": 20,
+                "fontWeight": "bold",
+                "formatter": function (params) {name='qwertyuiopasdfghjkl00zxcvbnm0';return name[params.data[0]+(2-params.data[1])*10];}
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u5b57\u6bcd\u51fa\u73b0\u6b21\u6570"
+            ],
+            "selected": {
+                "\u5b57\u6bcd\u51fa\u73b0\u6b21\u6570": true
+            },
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "formatter": function (params) {name='qwertyuiopasdfghjkl00zxcvbnm0';return name[params.data[0]+(2-params.data[1])*10]+' : '+params.data[2];},
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "0",
+                "1",
+                "2"
+            ]
+        }
+    ],
+    "title": [
+        {
+            "text": "\u300a\u5171\u4ea7\u515a\u5ba3\u8a00\u300b\u4e2d\u5168\u62fc\u5b57\u6bcd\u70ed\u529b\u56fe",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ],
+    "visualMap": {
+        "show": true,
+        "type": "continuous",
+        "min": 0,
+        "max": 7463,
+        "inRange": {
+            "color": [
+                "#F0FFF0",
+                "#006000"
+            ]
+        },
+        "calculable": true,
+        "inverse": false,
+        "splitNumber": 5,
+        "orient": "vertical",
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 140,
+        "borderWidth": 0
+    }
+};
+        chart_5f6d4571d2714defa0c736932ef8ad8e.setOption(option_5f6d4571d2714defa0c736932ef8ad8e);
+    </script>
+</body>
+</html>
