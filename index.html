@@ -1,0 +1,2754 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+</head>
+<body>
+
+        <style>
+            .fl-table {
+                margin: 20px;
+                border-radius: 5px;
+                font-size: 12px;
+                border: none;
+                border-collapse: collapse;
+                max-width: 100%;
+                white-space: nowrap;
+                word-break: keep-all;
+            }
+
+            .fl-table th {
+                text-align: left;
+                font-size: 20px;
+            }
+
+            .fl-table tr {
+                display: table-row;
+                vertical-align: inherit;
+                border-color: inherit;
+            }
+
+            .fl-table tr:hover td {
+                background: #00d1b2;
+                color: #F8F8F8;
+            }
+
+            .fl-table td, .fl-table th {
+                border-style: none;
+                border-top: 1px solid #dbdbdb;
+                border-left: 1px solid #dbdbdb;
+                border-bottom: 3px solid #dbdbdb;
+                border-right: 1px solid #dbdbdb;
+                padding: .5em .55em;
+                font-size: 15px;
+            }
+
+            .fl-table td {
+                border-style: none;
+                font-size: 15px;
+                vertical-align: center;
+                border-bottom: 1px solid #dbdbdb;
+                border-left: 1px solid #dbdbdb;
+                border-right: 1px solid #dbdbdb;
+                height: 30px;
+            }
+
+            .fl-table tr:nth-child(even) {
+                background: #F8F8F8;
+            }
+        </style>
+        <div id="7b70d0e01f674e17ad13220e58795612" class="chart-container" style="">
+            <p class="title" style="font-size: 18px; font-weight:bold;" > 拼音的哈夫曼编码</p>
+            <p class="subtitle" style="font-size: 12px;" > </p>
+            <table class="fl-table">
+    <thead>
+        <tr>
+            <th>拼音</th>
+            <th>哈夫曼编码位数</th>
+            <th>哈夫曼编码</th>
+            <th>次数</th>
+            <th>转化为BCD码（倒序）</th>
+            <th>转化为拼音（正序）</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>dao</td>
+            <td>7</td>
+            <td>0000000</td>
+            <td>103</td>
+            <td>0 0 </td>
+            <td>aa</td>
+        </tr>
+        <tr>
+            <td>lian</td>
+            <td>9</td>
+            <td>000000100</td>
+            <td>26</td>
+            <td>4 0 0 </td>
+            <td>aae</td>
+        </tr>
+        <tr>
+            <td>kan</td>
+            <td>9</td>
+            <td>000000101</td>
+            <td>26</td>
+            <td>5 0 0 </td>
+            <td>aaf</td>
+        </tr>
+        <tr>
+            <td>man</td>
+            <td>10</td>
+            <td>0000001100</td>
+            <td>13</td>
+            <td>12 0 0 </td>
+            <td>aam</td>
+        </tr>
+        <tr>
+            <td>gou</td>
+            <td>10</td>
+            <td>0000001101</td>
+            <td>13</td>
+            <td>13 0 0 </td>
+            <td>aan</td>
+        </tr>
+        <tr>
+            <td>ya</td>
+            <td>10</td>
+            <td>0000001110</td>
+            <td>13</td>
+            <td>14 0 0 </td>
+            <td>aao</td>
+        </tr>
+        <tr>
+            <td>ma</td>
+            <td>10</td>
+            <td>0000001111</td>
+            <td>13</td>
+            <td>15 0 0 </td>
+            <td>aap</td>
+        </tr>
+        <tr>
+            <td>di</td>
+            <td>7</td>
+            <td>0000010</td>
+            <td>104</td>
+            <td>2 0 </td>
+            <td>ac</td>
+        </tr>
+        <tr>
+            <td>ju</td>
+            <td>8</td>
+            <td>00000110</td>
+            <td>52</td>
+            <td>6 0 </td>
+            <td>ag</td>
+        </tr>
+        <tr>
+            <td>chang</td>
+            <td>8</td>
+            <td>00000111</td>
+            <td>53</td>
+            <td>7 0 </td>
+            <td>ah</td>
+        </tr>
+        <tr>
+            <td>neng</td>
+            <td>8</td>
+            <td>00001000</td>
+            <td>53</td>
+            <td>8 0 </td>
+            <td>ai</td>
+        </tr>
+        <tr>
+            <td>ba</td>
+            <td>8</td>
+            <td>00001001</td>
+            <td>53</td>
+            <td>9 0 </td>
+            <td>aj</td>
+        </tr>
+        <tr>
+            <td>guan</td>
+            <td>7</td>
+            <td>0000101</td>
+            <td>106</td>
+            <td>5 0 </td>
+            <td>af</td>
+        </tr>
+        <tr>
+            <td>hui</td>
+            <td>6</td>
+            <td>000011</td>
+            <td>213</td>
+            <td>3 0 </td>
+            <td>ad</td>
+        </tr>
+        <tr>
+            <td>ge</td>
+            <td>6</td>
+            <td>000100</td>
+            <td>213</td>
+            <td>4 0 </td>
+            <td>ae</td>
+        </tr>
+        <tr>
+            <td>er</td>
+            <td>7</td>
+            <td>0001010</td>
+            <td>106</td>
+            <td>10 0 </td>
+            <td>ak</td>
+        </tr>
+        <tr>
+            <td>kong</td>
+            <td>10</td>
+            <td>0001011000</td>
+            <td>13</td>
+            <td>8 5 0 </td>
+            <td>afi</td>
+        </tr>
+        <tr>
+            <td>mou</td>
+            <td>11</td>
+            <td>00010110010</td>
+            <td>7</td>
+            <td>2 11 0 </td>
+            <td>alc</td>
+        </tr>
+        <tr>
+            <td>se</td>
+            <td>11</td>
+            <td>00010110011</td>
+            <td>7</td>
+            <td>3 11 0 </td>
+            <td>ald</td>
+        </tr>
+        <tr>
+            <td>fei</td>
+            <td>9</td>
+            <td>000101101</td>
+            <td>27</td>
+            <td>13 2 0 </td>
+            <td>acn</td>
+        </tr>
+        <tr>
+            <td>zuo</td>
+            <td>8</td>
+            <td>00010111</td>
+            <td>54</td>
+            <td>7 1 </td>
+            <td>bh</td>
+        </tr>
+        <tr>
+            <td>men</td>
+            <td>6</td>
+            <td>000110</td>
+            <td>214</td>
+            <td>6 0 </td>
+            <td>ag</td>
+        </tr>
+        <tr>
+            <td>dui</td>
+            <td>7</td>
+            <td>0001110</td>
+            <td>109</td>
+            <td>14 0 </td>
+            <td>ao</td>
+        </tr>
+        <tr>
+            <td>ling</td>
+            <td>9</td>
+            <td>000111100</td>
+            <td>27</td>
+            <td>12 3 0 </td>
+            <td>adm</td>
+        </tr>
+        <tr>
+            <td>hao</td>
+            <td>10</td>
+            <td>0001111010</td>
+            <td>14</td>
+            <td>10 7 0 </td>
+            <td>ahk</td>
+        </tr>
+        <tr>
+            <td>su</td>
+            <td>10</td>
+            <td>0001111011</td>
+            <td>14</td>
+            <td>11 7 0 </td>
+            <td>ahl</td>
+        </tr>
+        <tr>
+            <td>wa</td>
+            <td>11</td>
+            <td>00011111000</td>
+            <td>7</td>
+            <td>8 15 0 </td>
+            <td>api</td>
+        </tr>
+        <tr>
+            <td>mo</td>
+            <td>11</td>
+            <td>00011111001</td>
+            <td>7</td>
+            <td>9 15 0 </td>
+            <td>apj</td>
+        </tr>
+        <tr>
+            <td>san</td>
+            <td>11</td>
+            <td>00011111010</td>
+            <td>7</td>
+            <td>10 15 0 </td>
+            <td>apk</td>
+        </tr>
+        <tr>
+            <td>tao</td>
+            <td>11</td>
+            <td>00011111011</td>
+            <td>7</td>
+            <td>11 15 0 </td>
+            <td>apl</td>
+        </tr>
+        <tr>
+            <td>tu</td>
+            <td>9</td>
+            <td>000111111</td>
+            <td>28</td>
+            <td>15 3 0 </td>
+            <td>adp</td>
+        </tr>
+        <tr>
+            <td>jie</td>
+            <td>5</td>
+            <td>00100</td>
+            <td>438</td>
+            <td>4 0 </td>
+            <td>ae</td>
+        </tr>
+        <tr>
+            <td>zhong</td>
+            <td>6</td>
+            <td>001010</td>
+            <td>221</td>
+            <td>10 0 </td>
+            <td>ak</td>
+        </tr>
+        <tr>
+            <td>cheng</td>
+            <td>7</td>
+            <td>0010110</td>
+            <td>112</td>
+            <td>6 1 </td>
+            <td>bg</td>
+        </tr>
+        <tr>
+            <td>ri</td>
+            <td>10</td>
+            <td>0010111000</td>
+            <td>14</td>
+            <td>8 11 0 </td>
+            <td>ali</td>
+        </tr>
+        <tr>
+            <td>zhou</td>
+            <td>10</td>
+            <td>0010111001</td>
+            <td>14</td>
+            <td>9 11 0 </td>
+            <td>alj</td>
+        </tr>
+        <tr>
+            <td>lei</td>
+            <td>11</td>
+            <td>00101110100</td>
+            <td>7</td>
+            <td>4 7 1 </td>
+            <td>bhe</td>
+        </tr>
+        <tr>
+            <td>ou</td>
+            <td>11</td>
+            <td>00101110101</td>
+            <td>7</td>
+            <td>5 7 1 </td>
+            <td>bhf</td>
+        </tr>
+        <tr>
+            <td>zhuan</td>
+            <td>10</td>
+            <td>0010111011</td>
+            <td>14</td>
+            <td>11 11 0 </td>
+            <td>all</td>
+        </tr>
+        <tr>
+            <td>zao</td>
+            <td>9</td>
+            <td>001011110</td>
+            <td>28</td>
+            <td>14 5 0 </td>
+            <td>afo</td>
+        </tr>
+        <tr>
+            <td>zong</td>
+            <td>9</td>
+            <td>001011111</td>
+            <td>29</td>
+            <td>15 5 0 </td>
+            <td>afp</td>
+        </tr>
+        <tr>
+            <td>xiao</td>
+            <td>7</td>
+            <td>0011000</td>
+            <td>113</td>
+            <td>8 1 </td>
+            <td>bi</td>
+        </tr>
+        <tr>
+            <td>mie</td>
+            <td>8</td>
+            <td>00110010</td>
+            <td>57</td>
+            <td>2 3 </td>
+            <td>dc</td>
+        </tr>
+        <tr>
+            <td>jiao</td>
+            <td>8</td>
+            <td>00110011</td>
+            <td>57</td>
+            <td>3 3 </td>
+            <td>dd</td>
+        </tr>
+        <tr>
+            <td>he</td>
+            <td>6</td>
+            <td>001101</td>
+            <td>228</td>
+            <td>13 0 </td>
+            <td>an</td>
+        </tr>
+        <tr>
+            <td>zai</td>
+            <td>6</td>
+            <td>001110</td>
+            <td>229</td>
+            <td>14 0 </td>
+            <td>ao</td>
+        </tr>
+        <tr>
+            <td>ren</td>
+            <td>6</td>
+            <td>001111</td>
+            <td>231</td>
+            <td>15 0 </td>
+            <td>ap</td>
+        </tr>
+        <tr>
+            <td>you</td>
+            <td>6</td>
+            <td>010000</td>
+            <td>232</td>
+            <td>0 1 </td>
+            <td>ba</td>
+        </tr>
+        <tr>
+            <td>liang</td>
+            <td>9</td>
+            <td>010001000</td>
+            <td>29</td>
+            <td>8 8 0 </td>
+            <td>aii</td>
+        </tr>
+        <tr>
+            <td>lu</td>
+            <td>10</td>
+            <td>0100010010</td>
+            <td>15</td>
+            <td>2 1 1 </td>
+            <td>bbc</td>
+        </tr>
+        <tr>
+            <td>ze</td>
+            <td>10</td>
+            <td>0100010011</td>
+            <td>15</td>
+            <td>3 1 1 </td>
+            <td>bbd</td>
+        </tr>
+        <tr>
+            <td>ben</td>
+            <td>8</td>
+            <td>01000101</td>
+            <td>59</td>
+            <td>5 4 </td>
+            <td>ef</td>
+        </tr>
+        <tr>
+            <td>jiu</td>
+            <td>7</td>
+            <td>0100011</td>
+            <td>118</td>
+            <td>3 2 </td>
+            <td>cd</td>
+        </tr>
+        <tr>
+            <td>ta</td>
+            <td>6</td>
+            <td>010010</td>
+            <td>239</td>
+            <td>2 1 </td>
+            <td>bc</td>
+        </tr>
+        <tr>
+            <td>chong</td>
+            <td>10</td>
+            <td>0100110000</td>
+            <td>15</td>
+            <td>0 3 1 </td>
+            <td>bda</td>
+        </tr>
+        <tr>
+            <td>ceng</td>
+            <td>10</td>
+            <td>0100110001</td>
+            <td>15</td>
+            <td>1 3 1 </td>
+            <td>bdb</td>
+        </tr>
+        <tr>
+            <td>bie</td>
+            <td>10</td>
+            <td>0100110010</td>
+            <td>15</td>
+            <td>2 3 1 </td>
+            <td>bdc</td>
+        </tr>
+        <tr>
+            <td>ding</td>
+            <td>10</td>
+            <td>0100110011</td>
+            <td>15</td>
+            <td>3 3 1 </td>
+            <td>bdd</td>
+        </tr>
+        <tr>
+            <td>dan</td>
+            <td>8</td>
+            <td>01001101</td>
+            <td>60</td>
+            <td>13 4 </td>
+            <td>en</td>
+        </tr>
+        <tr>
+            <td>gai</td>
+            <td>9</td>
+            <td>010011100</td>
+            <td>30</td>
+            <td>12 9 0 </td>
+            <td>ajm</td>
+        </tr>
+        <tr>
+            <td>bao</td>
+            <td>9</td>
+            <td>010011101</td>
+            <td>30</td>
+            <td>13 9 0 </td>
+            <td>ajn</td>
+        </tr>
+        <tr>
+            <td>chi</td>
+            <td>10</td>
+            <td>0100111100</td>
+            <td>15</td>
+            <td>12 3 1 </td>
+            <td>bdm</td>
+        </tr>
+        <tr>
+            <td>jun</td>
+            <td>10</td>
+            <td>0100111101</td>
+            <td>15</td>
+            <td>13 3 1 </td>
+            <td>bdn</td>
+        </tr>
+        <tr>
+            <td>cha</td>
+            <td>11</td>
+            <td>01001111100</td>
+            <td>7</td>
+            <td>12 7 2 </td>
+            <td>chm</td>
+        </tr>
+        <tr>
+            <td>leng</td>
+            <td>12</td>
+            <td>010011111010</td>
+            <td>4</td>
+            <td>10 15 4 </td>
+            <td>epk</td>
+        </tr>
+        <tr>
+            <td>dun</td>
+            <td>12</td>
+            <td>010011111011</td>
+            <td>4</td>
+            <td>11 15 4 </td>
+            <td>epl</td>
+        </tr>
+        <tr>
+            <td>geng</td>
+            <td>10</td>
+            <td>0100111111</td>
+            <td>15</td>
+            <td>15 3 1 </td>
+            <td>bdp</td>
+        </tr>
+        <tr>
+            <td>yu</td>
+            <td>7</td>
+            <td>0101000</td>
+            <td>120</td>
+            <td>8 2 </td>
+            <td>ci</td>
+        </tr>
+        <tr>
+            <td>xian</td>
+            <td>7</td>
+            <td>0101001</td>
+            <td>121</td>
+            <td>9 2 </td>
+            <td>cj</td>
+        </tr>
+        <tr>
+            <td>dong</td>
+            <td>7</td>
+            <td>0101010</td>
+            <td>121</td>
+            <td>10 2 </td>
+            <td>ck</td>
+        </tr>
+        <tr>
+            <td>xing</td>
+            <td>7</td>
+            <td>0101011</td>
+            <td>121</td>
+            <td>11 2 </td>
+            <td>cl</td>
+        </tr>
+        <tr>
+            <td>chan</td>
+            <td>5</td>
+            <td>01011</td>
+            <td>490</td>
+            <td>11 0 </td>
+            <td>al</td>
+        </tr>
+        <tr>
+            <td>jiang</td>
+            <td>10</td>
+            <td>0110000000</td>
+            <td>15</td>
+            <td>0 8 1 </td>
+            <td>bia</td>
+        </tr>
+        <tr>
+            <td>an</td>
+            <td>11</td>
+            <td>01100000010</td>
+            <td>8</td>
+            <td>2 0 3 </td>
+            <td>dac</td>
+        </tr>
+        <tr>
+            <td>nv</td>
+            <td>11</td>
+            <td>01100000011</td>
+            <td>8</td>
+            <td>3 0 3 </td>
+            <td>dad</td>
+        </tr>
+        <tr>
+            <td>ran</td>
+            <td>9</td>
+            <td>011000001</td>
+            <td>31</td>
+            <td>1 12 0 </td>
+            <td>amb</td>
+        </tr>
+        <tr>
+            <td>cai</td>
+            <td>8</td>
+            <td>01100001</td>
+            <td>62</td>
+            <td>1 6 </td>
+            <td>gb</td>
+        </tr>
+        <tr>
+            <td>lai</td>
+            <td>7</td>
+            <td>0110001</td>
+            <td>125</td>
+            <td>1 3 </td>
+            <td>db</td>
+        </tr>
+        <tr>
+            <td>yan</td>
+            <td>9</td>
+            <td>011001000</td>
+            <td>31</td>
+            <td>8 12 0 </td>
+            <td>ami</td>
+        </tr>
+        <tr>
+            <td>tai</td>
+            <td>10</td>
+            <td>0110010010</td>
+            <td>16</td>
+            <td>2 9 1 </td>
+            <td>bjc</td>
+        </tr>
+        <tr>
+            <td>nu</td>
+            <td>10</td>
+            <td>0110010011</td>
+            <td>16</td>
+            <td>3 9 1 </td>
+            <td>bjd</td>
+        </tr>
+        <tr>
+            <td>fang</td>
+            <td>8</td>
+            <td>01100101</td>
+            <td>63</td>
+            <td>5 6 </td>
+            <td>gf</td>
+        </tr>
+        <tr>
+            <td>bei</td>
+            <td>8</td>
+            <td>01100110</td>
+            <td>64</td>
+            <td>6 6 </td>
+            <td>gg</td>
+        </tr>
+        <tr>
+            <td>yin</td>
+            <td>8</td>
+            <td>01100111</td>
+            <td>64</td>
+            <td>7 6 </td>
+            <td>gh</td>
+        </tr>
+        <tr>
+            <td>shao</td>
+            <td>10</td>
+            <td>0110100000</td>
+            <td>16</td>
+            <td>0 10 1 </td>
+            <td>bka</td>
+        </tr>
+        <tr>
+            <td>ting</td>
+            <td>10</td>
+            <td>0110100001</td>
+            <td>16</td>
+            <td>1 10 1 </td>
+            <td>bkb</td>
+        </tr>
+        <tr>
+            <td>kao</td>
+            <td>12</td>
+            <td>011010001000</td>
+            <td>4</td>
+            <td>8 8 6 </td>
+            <td>gii</td>
+        </tr>
+        <tr>
+            <td>zhun</td>
+            <td>12</td>
+            <td>011010001001</td>
+            <td>4</td>
+            <td>9 8 6 </td>
+            <td>gij</td>
+        </tr>
+        <tr>
+            <td>gang</td>
+            <td>12</td>
+            <td>011010001010</td>
+            <td>4</td>
+            <td>10 8 6 </td>
+            <td>gik</td>
+        </tr>
+        <tr>
+            <td>tuo</td>
+            <td>12</td>
+            <td>011010001011</td>
+            <td>4</td>
+            <td>11 8 6 </td>
+            <td>gil</td>
+        </tr>
+        <tr>
+            <td>pao</td>
+            <td>12</td>
+            <td>011010001100</td>
+            <td>4</td>
+            <td>12 8 6 </td>
+            <td>gim</td>
+        </tr>
+        <tr>
+            <td>fo</td>
+            <td>12</td>
+            <td>011010001101</td>
+            <td>4</td>
+            <td>13 8 6 </td>
+            <td>gin</td>
+        </tr>
+        <tr>
+            <td>xiong</td>
+            <td>12</td>
+            <td>011010001110</td>
+            <td>4</td>
+            <td>14 8 6 </td>
+            <td>gio</td>
+        </tr>
+        <tr>
+            <td>zou</td>
+            <td>12</td>
+            <td>011010001111</td>
+            <td>4</td>
+            <td>15 8 6 </td>
+            <td>gip</td>
+        </tr>
+        <tr>
+            <td>min</td>
+            <td>8</td>
+            <td>01101001</td>
+            <td>64</td>
+            <td>9 6 </td>
+            <td>gj</td>
+        </tr>
+        <tr>
+            <td>liu</td>
+            <td>11</td>
+            <td>01101010000</td>
+            <td>8</td>
+            <td>0 5 3 </td>
+            <td>dfa</td>
+        </tr>
+        <tr>
+            <td>huang</td>
+            <td>11</td>
+            <td>01101010001</td>
+            <td>8</td>
+            <td>1 5 3 </td>
+            <td>dfb</td>
+        </tr>
+        <tr>
+            <td>peng</td>
+            <td>13</td>
+            <td>0110101001000</td>
+            <td>2</td>
+            <td>8 4 13 0 </td>
+            <td>anei</td>
+        </tr>
+        <tr>
+            <td>sa</td>
+            <td>13</td>
+            <td>0110101001001</td>
+            <td>2</td>
+            <td>9 4 13 0 </td>
+            <td>anej</td>
+        </tr>
+        <tr>
+            <td>ken</td>
+            <td>13</td>
+            <td>0110101001010</td>
+            <td>2</td>
+            <td>10 4 13 0 </td>
+            <td>anek</td>
+        </tr>
+        <tr>
+            <td>lve</td>
+            <td>13</td>
+            <td>0110101001011</td>
+            <td>2</td>
+            <td>11 4 13 0 </td>
+            <td>anel</td>
+        </tr>
+        <tr>
+            <td>kou</td>
+            <td>11</td>
+            <td>01101010011</td>
+            <td>8</td>
+            <td>3 5 3 </td>
+            <td>dfd</td>
+        </tr>
+        <tr>
+            <td>feng</td>
+            <td>9</td>
+            <td>011010101</td>
+            <td>32</td>
+            <td>5 13 0 </td>
+            <td>anf</td>
+        </tr>
+        <tr>
+            <td>zhai</td>
+            <td>14</td>
+            <td>01101011000000</td>
+            <td>1</td>
+            <td>0 12 10 1 </td>
+            <td>bkma</td>
+        </tr>
+        <tr>
+            <td>miao</td>
+            <td>14</td>
+            <td>01101011000001</td>
+            <td>1</td>
+            <td>1 12 10 1 </td>
+            <td>bkmb</td>
+        </tr>
+        <tr>
+            <td>qia</td>
+            <td>14</td>
+            <td>01101011000010</td>
+            <td>1</td>
+            <td>2 12 10 1 </td>
+            <td>bkmc</td>
+        </tr>
+        <tr>
+            <td>kui</td>
+            <td>14</td>
+            <td>01101011000011</td>
+            <td>1</td>
+            <td>3 12 10 1 </td>
+            <td>bkmd</td>
+        </tr>
+        <tr>
+            <td>a</td>
+            <td>14</td>
+            <td>01101011000100</td>
+            <td>1</td>
+            <td>4 12 10 1 </td>
+            <td>bkme</td>
+        </tr>
+        <tr>
+            <td>ning</td>
+            <td>14</td>
+            <td>01101011000101</td>
+            <td>1</td>
+            <td>5 12 10 1 </td>
+            <td>bkmf</td>
+        </tr>
+        <tr>
+            <td>hong</td>
+            <td>14</td>
+            <td>01101011000110</td>
+            <td>1</td>
+            <td>6 12 10 1 </td>
+            <td>bkmg</td>
+        </tr>
+        <tr>
+            <td>beng</td>
+            <td>14</td>
+            <td>01101011000111</td>
+            <td>1</td>
+            <td>7 12 10 1 </td>
+            <td>bkmh</td>
+        </tr>
+        <tr>
+            <td>nang</td>
+            <td>14</td>
+            <td>01101011001000</td>
+            <td>1</td>
+            <td>8 12 10 1 </td>
+            <td>bkmi</td>
+        </tr>
+        <tr>
+            <td>tun</td>
+            <td>14</td>
+            <td>01101011001001</td>
+            <td>1</td>
+            <td>9 12 10 1 </td>
+            <td>bkmj</td>
+        </tr>
+        <tr>
+            <td>zhua</td>
+            <td>14</td>
+            <td>01101011001010</td>
+            <td>1</td>
+            <td>10 12 10 1 </td>
+            <td>bkmk</td>
+        </tr>
+        <tr>
+            <td>nie</td>
+            <td>14</td>
+            <td>01101011001011</td>
+            <td>1</td>
+            <td>11 12 10 1 </td>
+            <td>bkml</td>
+        </tr>
+        <tr>
+            <td>rao</td>
+            <td>14</td>
+            <td>01101011001100</td>
+            <td>1</td>
+            <td>12 12 10 1 </td>
+            <td>bkmm</td>
+        </tr>
+        <tr>
+            <td>chuo</td>
+            <td>14</td>
+            <td>01101011001101</td>
+            <td>1</td>
+            <td>13 12 10 1 </td>
+            <td>bkmn</td>
+        </tr>
+        <tr>
+            <td>chui</td>
+            <td>14</td>
+            <td>01101011001110</td>
+            <td>1</td>
+            <td>14 12 10 1 </td>
+            <td>bkmo</td>
+        </tr>
+        <tr>
+            <td>ruo</td>
+            <td>14</td>
+            <td>01101011001111</td>
+            <td>1</td>
+            <td>15 12 10 1 </td>
+            <td>bkmp</td>
+        </tr>
+        <tr>
+            <td>lan</td>
+            <td>12</td>
+            <td>011010110100</td>
+            <td>4</td>
+            <td>4 11 6 </td>
+            <td>gle</td>
+        </tr>
+        <tr>
+            <td>bang</td>
+            <td>12</td>
+            <td>011010110101</td>
+            <td>4</td>
+            <td>5 11 6 </td>
+            <td>glf</td>
+        </tr>
+        <tr>
+            <td>zhuo</td>
+            <td>14</td>
+            <td>01101011011000</td>
+            <td>1</td>
+            <td>8 13 10 1 </td>
+            <td>bkni</td>
+        </tr>
+        <tr>
+            <td>shuang</td>
+            <td>14</td>
+            <td>01101011011001</td>
+            <td>1</td>
+            <td>9 13 10 1 </td>
+            <td>bknj</td>
+        </tr>
+        <tr>
+            <td>fou</td>
+            <td>14</td>
+            <td>01101011011010</td>
+            <td>1</td>
+            <td>10 13 10 1 </td>
+            <td>bknk</td>
+        </tr>
+        <tr>
+            <td>nuo</td>
+            <td>14</td>
+            <td>01101011011011</td>
+            <td>1</td>
+            <td>11 13 10 1 </td>
+            <td>bknl</td>
+        </tr>
+        <tr>
+            <td>rang</td>
+            <td>12</td>
+            <td>011010110111</td>
+            <td>4</td>
+            <td>7 11 6 </td>
+            <td>glh</td>
+        </tr>
+        <tr>
+            <td>pang</td>
+            <td>13</td>
+            <td>0110101110000</td>
+            <td>2</td>
+            <td>0 7 13 0 </td>
+            <td>anha</td>
+        </tr>
+        <tr>
+            <td>suan</td>
+            <td>13</td>
+            <td>0110101110001</td>
+            <td>2</td>
+            <td>1 7 13 0 </td>
+            <td>anhb</td>
+        </tr>
+        <tr>
+            <td>sai</td>
+            <td>13</td>
+            <td>0110101110010</td>
+            <td>2</td>
+            <td>2 7 13 0 </td>
+            <td>anhc</td>
+        </tr>
+        <tr>
+            <td>qin</td>
+            <td>13</td>
+            <td>0110101110011</td>
+            <td>2</td>
+            <td>3 7 13 0 </td>
+            <td>anhd</td>
+        </tr>
+        <tr>
+            <td>pie</td>
+            <td>13</td>
+            <td>0110101110100</td>
+            <td>2</td>
+            <td>4 7 13 0 </td>
+            <td>anhe</td>
+        </tr>
+        <tr>
+            <td>re</td>
+            <td>13</td>
+            <td>0110101110101</td>
+            <td>2</td>
+            <td>5 7 13 0 </td>
+            <td>anhf</td>
+        </tr>
+        <tr>
+            <td>luan</td>
+            <td>13</td>
+            <td>0110101110110</td>
+            <td>2</td>
+            <td>6 7 13 0 </td>
+            <td>anhg</td>
+        </tr>
+        <tr>
+            <td>qiao</td>
+            <td>13</td>
+            <td>0110101110111</td>
+            <td>2</td>
+            <td>7 7 13 0 </td>
+            <td>anhh</td>
+        </tr>
+        <tr>
+            <td>han</td>
+            <td>13</td>
+            <td>0110101111000</td>
+            <td>2</td>
+            <td>8 7 13 0 </td>
+            <td>anhi</td>
+        </tr>
+        <tr>
+            <td>lou</td>
+            <td>13</td>
+            <td>0110101111001</td>
+            <td>2</td>
+            <td>9 7 13 0 </td>
+            <td>anhj</td>
+        </tr>
+        <tr>
+            <td>weng</td>
+            <td>14</td>
+            <td>01101011110100</td>
+            <td>1</td>
+            <td>4 15 10 1 </td>
+            <td>bkpe</td>
+        </tr>
+        <tr>
+            <td>ao</td>
+            <td>14</td>
+            <td>01101011110101</td>
+            <td>1</td>
+            <td>5 15 10 1 </td>
+            <td>bkpf</td>
+        </tr>
+        <tr>
+            <td>cang</td>
+            <td>13</td>
+            <td>0110101111011</td>
+            <td>2</td>
+            <td>11 7 13 0 </td>
+            <td>anhl</td>
+        </tr>
+        <tr>
+            <td>sha</td>
+            <td>13</td>
+            <td>0110101111100</td>
+            <td>2</td>
+            <td>12 7 13 0 </td>
+            <td>anhm</td>
+        </tr>
+        <tr>
+            <td>rui</td>
+            <td>13</td>
+            <td>0110101111101</td>
+            <td>2</td>
+            <td>13 7 13 0 </td>
+            <td>anhn</td>
+        </tr>
+        <tr>
+            <td>kua</td>
+            <td>13</td>
+            <td>0110101111110</td>
+            <td>2</td>
+            <td>14 7 13 0 </td>
+            <td>anho</td>
+        </tr>
+        <tr>
+            <td>guai</td>
+            <td>13</td>
+            <td>0110101111111</td>
+            <td>2</td>
+            <td>15 7 13 0 </td>
+            <td>anhp</td>
+        </tr>
+        <tr>
+            <td>bing</td>
+            <td>9</td>
+            <td>011011000</td>
+            <td>33</td>
+            <td>8 13 0 </td>
+            <td>ani</td>
+        </tr>
+        <tr>
+            <td>ban</td>
+            <td>9</td>
+            <td>011011001</td>
+            <td>33</td>
+            <td>9 13 0 </td>
+            <td>anj</td>
+        </tr>
+        <tr>
+            <td>te</td>
+            <td>10</td>
+            <td>0110110100</td>
+            <td>16</td>
+            <td>4 11 1 </td>
+            <td>ble</td>
+        </tr>
+        <tr>
+            <td>liao</td>
+            <td>11</td>
+            <td>01101101010</td>
+            <td>8</td>
+            <td>10 6 3 </td>
+            <td>dgk</td>
+        </tr>
+        <tr>
+            <td>gao</td>
+            <td>11</td>
+            <td>01101101011</td>
+            <td>9</td>
+            <td>11 6 3 </td>
+            <td>dgl</td>
+        </tr>
+        <tr>
+            <td>duo</td>
+            <td>9</td>
+            <td>011011011</td>
+            <td>33</td>
+            <td>11 13 0 </td>
+            <td>anl</td>
+        </tr>
+        <tr>
+            <td>shou</td>
+            <td>8</td>
+            <td>01101110</td>
+            <td>67</td>
+            <td>14 6 </td>
+            <td>go</td>
+        </tr>
+        <tr>
+            <td>da</td>
+            <td>8</td>
+            <td>01101111</td>
+            <td>67</td>
+            <td>15 6 </td>
+            <td>gp</td>
+        </tr>
+        <tr>
+            <td>li</td>
+            <td>6</td>
+            <td>011100</td>
+            <td>267</td>
+            <td>12 1 </td>
+            <td>bm</td>
+        </tr>
+        <tr>
+            <td>zhe</td>
+            <td>6</td>
+            <td>011101</td>
+            <td>267</td>
+            <td>13 1 </td>
+            <td>bn</td>
+        </tr>
+        <tr>
+            <td>yi</td>
+            <td>5</td>
+            <td>01111</td>
+            <td>539</td>
+            <td>15 0 </td>
+            <td>ap</td>
+        </tr>
+        <tr>
+            <td>zhu</td>
+            <td>7</td>
+            <td>1000000</td>
+            <td>134</td>
+            <td>0 4 </td>
+            <td>ea</td>
+        </tr>
+        <tr>
+            <td>qi</td>
+            <td>7</td>
+            <td>1000001</td>
+            <td>135</td>
+            <td>1 4 </td>
+            <td>eb</td>
+        </tr>
+        <tr>
+            <td>fa</td>
+            <td>7</td>
+            <td>1000010</td>
+            <td>135</td>
+            <td>2 4 </td>
+            <td>ec</td>
+        </tr>
+        <tr>
+            <td>wang</td>
+            <td>10</td>
+            <td>1000011000</td>
+            <td>17</td>
+            <td>8 1 2 </td>
+            <td>cbi</td>
+        </tr>
+        <tr>
+            <td>pai</td>
+            <td>10</td>
+            <td>1000011001</td>
+            <td>17</td>
+            <td>9 1 2 </td>
+            <td>cbj</td>
+        </tr>
+        <tr>
+            <td>pi</td>
+            <td>10</td>
+            <td>1000011010</td>
+            <td>17</td>
+            <td>10 1 2 </td>
+            <td>cbk</td>
+        </tr>
+        <tr>
+            <td>diao</td>
+            <td>10</td>
+            <td>1000011011</td>
+            <td>17</td>
+            <td>11 1 2 </td>
+            <td>cbl</td>
+        </tr>
+        <tr>
+            <td>shang</td>
+            <td>8</td>
+            <td>10000111</td>
+            <td>68</td>
+            <td>7 8 </td>
+            <td>ih</td>
+        </tr>
+        <tr>
+            <td>gong</td>
+            <td>6</td>
+            <td>100010</td>
+            <td>271</td>
+            <td>2 2 </td>
+            <td>cc</td>
+        </tr>
+        <tr>
+            <td>bu</td>
+            <td>6</td>
+            <td>100011</td>
+            <td>272</td>
+            <td>3 2 </td>
+            <td>cd</td>
+        </tr>
+        <tr>
+            <td>ye</td>
+            <td>7</td>
+            <td>1001000</td>
+            <td>136</td>
+            <td>8 4 </td>
+            <td>ei</td>
+        </tr>
+        <tr>
+            <td>xie</td>
+            <td>8</td>
+            <td>10010010</td>
+            <td>68</td>
+            <td>2 9 </td>
+            <td>jc</td>
+        </tr>
+        <tr>
+            <td>zhang</td>
+            <td>10</td>
+            <td>1001001100</td>
+            <td>17</td>
+            <td>12 4 2 </td>
+            <td>cem</td>
+        </tr>
+        <tr>
+            <td>lv</td>
+            <td>10</td>
+            <td>1001001101</td>
+            <td>17</td>
+            <td>13 4 2 </td>
+            <td>cen</td>
+        </tr>
+        <tr>
+            <td>gu</td>
+            <td>9</td>
+            <td>100100111</td>
+            <td>35</td>
+            <td>7 2 1 </td>
+            <td>bch</td>
+        </tr>
+        <tr>
+            <td>cong</td>
+            <td>9</td>
+            <td>100101000</td>
+            <td>35</td>
+            <td>8 2 1 </td>
+            <td>bci</td>
+        </tr>
+        <tr>
+            <td>zhuang</td>
+            <td>10</td>
+            <td>1001010010</td>
+            <td>18</td>
+            <td>2 5 2 </td>
+            <td>cfc</td>
+        </tr>
+        <tr>
+            <td>zeng</td>
+            <td>10</td>
+            <td>1001010011</td>
+            <td>18</td>
+            <td>3 5 2 </td>
+            <td>cfd</td>
+        </tr>
+        <tr>
+            <td>fan</td>
+            <td>8</td>
+            <td>10010101</td>
+            <td>71</td>
+            <td>5 9 </td>
+            <td>jf</td>
+        </tr>
+        <tr>
+            <td>jian</td>
+            <td>7</td>
+            <td>1001011</td>
+            <td>142</td>
+            <td>11 4 </td>
+            <td>el</td>
+        </tr>
+        <tr>
+            <td>qiu</td>
+            <td>10</td>
+            <td>1001100000</td>
+            <td>18</td>
+            <td>0 6 2 </td>
+            <td>cga</td>
+        </tr>
+        <tr>
+            <td>que</td>
+            <td>10</td>
+            <td>1001100001</td>
+            <td>18</td>
+            <td>1 6 2 </td>
+            <td>cgb</td>
+        </tr>
+        <tr>
+            <td>gei</td>
+            <td>11</td>
+            <td>10011000100</td>
+            <td>9</td>
+            <td>4 12 4 </td>
+            <td>eme</td>
+        </tr>
+        <tr>
+            <td>rong</td>
+            <td>11</td>
+            <td>10011000101</td>
+            <td>9</td>
+            <td>5 12 4 </td>
+            <td>emf</td>
+        </tr>
+        <tr>
+            <td>hen</td>
+            <td>11</td>
+            <td>10011000110</td>
+            <td>9</td>
+            <td>6 12 4 </td>
+            <td>emg</td>
+        </tr>
+        <tr>
+            <td>bai</td>
+            <td>11</td>
+            <td>10011000111</td>
+            <td>9</td>
+            <td>7 12 4 </td>
+            <td>emh</td>
+        </tr>
+        <tr>
+            <td>kuang</td>
+            <td>11</td>
+            <td>10011001000</td>
+            <td>9</td>
+            <td>8 12 4 </td>
+            <td>emi</td>
+        </tr>
+        <tr>
+            <td>chuan</td>
+            <td>11</td>
+            <td>10011001001</td>
+            <td>9</td>
+            <td>9 12 4 </td>
+            <td>emj</td>
+        </tr>
+        <tr>
+            <td>mi</td>
+            <td>11</td>
+            <td>10011001010</td>
+            <td>9</td>
+            <td>10 12 4 </td>
+            <td>emk</td>
+        </tr>
+        <tr>
+            <td>cui</td>
+            <td>11</td>
+            <td>10011001011</td>
+            <td>9</td>
+            <td>11 12 4 </td>
+            <td>eml</td>
+        </tr>
+        <tr>
+            <td>hu</td>
+            <td>9</td>
+            <td>100110011</td>
+            <td>37</td>
+            <td>3 3 1 </td>
+            <td>bdd</td>
+        </tr>
+        <tr>
+            <td>ming</td>
+            <td>8</td>
+            <td>10011010</td>
+            <td>73</td>
+            <td>10 9 </td>
+            <td>jk</td>
+        </tr>
+        <tr>
+            <td>chu</td>
+            <td>8</td>
+            <td>10011011</td>
+            <td>73</td>
+            <td>11 9 </td>
+            <td>jl</td>
+        </tr>
+        <tr>
+            <td>yuan</td>
+            <td>9</td>
+            <td>100111000</td>
+            <td>37</td>
+            <td>8 3 1 </td>
+            <td>bdi</td>
+        </tr>
+        <tr>
+            <td>duan</td>
+            <td>9</td>
+            <td>100111001</td>
+            <td>37</td>
+            <td>9 3 1 </td>
+            <td>bdj</td>
+        </tr>
+        <tr>
+            <td>ying</td>
+            <td>9</td>
+            <td>100111010</td>
+            <td>37</td>
+            <td>10 3 1 </td>
+            <td>bdk</td>
+        </tr>
+        <tr>
+            <td>hua</td>
+            <td>9</td>
+            <td>100111011</td>
+            <td>38</td>
+            <td>11 3 1 </td>
+            <td>bdl</td>
+        </tr>
+        <tr>
+            <td>wu</td>
+            <td>7</td>
+            <td>1001111</td>
+            <td>151</td>
+            <td>15 4 </td>
+            <td>ep</td>
+        </tr>
+        <tr>
+            <td>ji</td>
+            <td>5</td>
+            <td>10100</td>
+            <td>606</td>
+            <td>4 1 </td>
+            <td>be</td>
+        </tr>
+        <tr>
+            <td>wei</td>
+            <td>7</td>
+            <td>1010100</td>
+            <td>152</td>
+            <td>4 5 </td>
+            <td>fe</td>
+        </tr>
+        <tr>
+            <td>wo</td>
+            <td>9</td>
+            <td>101010100</td>
+            <td>38</td>
+            <td>4 5 1 </td>
+            <td>bfe</td>
+        </tr>
+        <tr>
+            <td>xia</td>
+            <td>9</td>
+            <td>101010101</td>
+            <td>38</td>
+            <td>5 5 1 </td>
+            <td>bff</td>
+        </tr>
+        <tr>
+            <td>deng</td>
+            <td>9</td>
+            <td>101010110</td>
+            <td>38</td>
+            <td>6 5 1 </td>
+            <td>bfg</td>
+        </tr>
+        <tr>
+            <td>mu</td>
+            <td>10</td>
+            <td>1010101110</td>
+            <td>19</td>
+            <td>14 10 2 </td>
+            <td>cko</td>
+        </tr>
+        <tr>
+            <td>pan</td>
+            <td>11</td>
+            <td>10101011110</td>
+            <td>10</td>
+            <td>14 5 5 </td>
+            <td>ffo</td>
+        </tr>
+        <tr>
+            <td>kuo</td>
+            <td>11</td>
+            <td>10101011111</td>
+            <td>10</td>
+            <td>15 5 5 </td>
+            <td>ffp</td>
+        </tr>
+        <tr>
+            <td>yong</td>
+            <td>8</td>
+            <td>10101100</td>
+            <td>77</td>
+            <td>12 10 </td>
+            <td>km</td>
+        </tr>
+        <tr>
+            <td>zu</td>
+            <td>8</td>
+            <td>10101101</td>
+            <td>77</td>
+            <td>13 10 </td>
+            <td>kn</td>
+        </tr>
+        <tr>
+            <td>yun</td>
+            <td>9</td>
+            <td>101011100</td>
+            <td>39</td>
+            <td>12 5 1 </td>
+            <td>bfm</td>
+        </tr>
+        <tr>
+            <td>zui</td>
+            <td>9</td>
+            <td>101011101</td>
+            <td>39</td>
+            <td>13 5 1 </td>
+            <td>bfn</td>
+        </tr>
+        <tr>
+            <td>ni</td>
+            <td>9</td>
+            <td>101011110</td>
+            <td>39</td>
+            <td>14 5 1 </td>
+            <td>bfo</td>
+        </tr>
+        <tr>
+            <td>pian</td>
+            <td>12</td>
+            <td>101011111000</td>
+            <td>5</td>
+            <td>8 15 10 </td>
+            <td>kpi</td>
+        </tr>
+        <tr>
+            <td>guang</td>
+            <td>12</td>
+            <td>101011111001</td>
+            <td>5</td>
+            <td>9 15 10 </td>
+            <td>kpj</td>
+        </tr>
+        <tr>
+            <td>che</td>
+            <td>12</td>
+            <td>101011111010</td>
+            <td>5</td>
+            <td>10 15 10 </td>
+            <td>kpk</td>
+        </tr>
+        <tr>
+            <td>xun</td>
+            <td>12</td>
+            <td>101011111011</td>
+            <td>5</td>
+            <td>11 15 10 </td>
+            <td>kpl</td>
+        </tr>
+        <tr>
+            <td>nian</td>
+            <td>10</td>
+            <td>1010111111</td>
+            <td>20</td>
+            <td>15 11 2 </td>
+            <td>clp</td>
+        </tr>
+        <tr>
+            <td>zhan</td>
+            <td>8</td>
+            <td>10110000</td>
+            <td>79</td>
+            <td>0 11 </td>
+            <td>la</td>
+        </tr>
+        <tr>
+            <td>qu</td>
+            <td>8</td>
+            <td>10110001</td>
+            <td>79</td>
+            <td>1 11 </td>
+            <td>lb</td>
+        </tr>
+        <tr>
+            <td>hou</td>
+            <td>9</td>
+            <td>101100100</td>
+            <td>40</td>
+            <td>4 6 1 </td>
+            <td>bge</td>
+        </tr>
+        <tr>
+            <td>xu</td>
+            <td>9</td>
+            <td>101100101</td>
+            <td>40</td>
+            <td>5 6 1 </td>
+            <td>bgf</td>
+        </tr>
+        <tr>
+            <td>hang</td>
+            <td>12</td>
+            <td>101100110000</td>
+            <td>5</td>
+            <td>0 3 11 </td>
+            <td>lda</td>
+        </tr>
+        <tr>
+            <td>qun</td>
+            <td>12</td>
+            <td>101100110001</td>
+            <td>5</td>
+            <td>1 3 11 </td>
+            <td>ldb</td>
+        </tr>
+        <tr>
+            <td>ha</td>
+            <td>13</td>
+            <td>1011001100100</td>
+            <td>2</td>
+            <td>4 6 6 1 </td>
+            <td>bgge</td>
+        </tr>
+        <tr>
+            <td>ku</td>
+            <td>13</td>
+            <td>1011001100101</td>
+            <td>3</td>
+            <td>5 6 6 1 </td>
+            <td>bggf</td>
+        </tr>
+        <tr>
+            <td>hai</td>
+            <td>12</td>
+            <td>101100110011</td>
+            <td>5</td>
+            <td>3 3 11 </td>
+            <td>ldd</td>
+        </tr>
+        <tr>
+            <td>seng</td>
+            <td>12</td>
+            <td>101100110100</td>
+            <td>5</td>
+            <td>4 3 11 </td>
+            <td>lde</td>
+        </tr>
+        <tr>
+            <td>kuai</td>
+            <td>12</td>
+            <td>101100110101</td>
+            <td>5</td>
+            <td>5 3 11 </td>
+            <td>ldf</td>
+        </tr>
+        <tr>
+            <td>cuo</td>
+            <td>12</td>
+            <td>101100110110</td>
+            <td>5</td>
+            <td>6 3 11 </td>
+            <td>ldg</td>
+        </tr>
+        <tr>
+            <td>la</td>
+            <td>12</td>
+            <td>101100110111</td>
+            <td>5</td>
+            <td>7 3 11 </td>
+            <td>ldh</td>
+        </tr>
+        <tr>
+            <td>wai</td>
+            <td>11</td>
+            <td>10110011100</td>
+            <td>10</td>
+            <td>12 9 5 </td>
+            <td>fjm</td>
+        </tr>
+        <tr>
+            <td>xuan</td>
+            <td>11</td>
+            <td>10110011101</td>
+            <td>10</td>
+            <td>13 9 5 </td>
+            <td>fjn</td>
+        </tr>
+        <tr>
+            <td>qing</td>
+            <td>11</td>
+            <td>10110011110</td>
+            <td>10</td>
+            <td>14 9 5 </td>
+            <td>fjo</td>
+        </tr>
+        <tr>
+            <td>shui</td>
+            <td>11</td>
+            <td>10110011111</td>
+            <td>10</td>
+            <td>15 9 5 </td>
+            <td>fjp</td>
+        </tr>
+        <tr>
+            <td>sheng</td>
+            <td>7</td>
+            <td>1011010</td>
+            <td>161</td>
+            <td>10 5 </td>
+            <td>fk</td>
+        </tr>
+        <tr>
+            <td>huo</td>
+            <td>8</td>
+            <td>10110110</td>
+            <td>81</td>
+            <td>6 11 </td>
+            <td>lg</td>
+        </tr>
+        <tr>
+            <td>lun</td>
+            <td>10</td>
+            <td>1011011100</td>
+            <td>20</td>
+            <td>12 13 2 </td>
+            <td>cnm</td>
+        </tr>
+        <tr>
+            <td>tian</td>
+            <td>11</td>
+            <td>10110111010</td>
+            <td>10</td>
+            <td>10 11 5 </td>
+            <td>flk</td>
+        </tr>
+        <tr>
+            <td>zun</td>
+            <td>12</td>
+            <td>101101110110</td>
+            <td>5</td>
+            <td>6 7 11 </td>
+            <td>lhg</td>
+        </tr>
+        <tr>
+            <td>zan</td>
+            <td>13</td>
+            <td>1011011101110</td>
+            <td>3</td>
+            <td>14 14 6 1 </td>
+            <td>bgoo</td>
+        </tr>
+        <tr>
+            <td>zen</td>
+            <td>13</td>
+            <td>1011011101111</td>
+            <td>3</td>
+            <td>15 14 6 1 </td>
+            <td>bgop</td>
+        </tr>
+        <tr>
+            <td>bi</td>
+            <td>9</td>
+            <td>101101111</td>
+            <td>41</td>
+            <td>15 6 1 </td>
+            <td>bgp</td>
+        </tr>
+        <tr>
+            <td>she</td>
+            <td>7</td>
+            <td>1011100</td>
+            <td>164</td>
+            <td>12 5 </td>
+            <td>fm</td>
+        </tr>
+        <tr>
+            <td>tong</td>
+            <td>7</td>
+            <td>1011101</td>
+            <td>166</td>
+            <td>13 5 </td>
+            <td>fn</td>
+        </tr>
+        <tr>
+            <td>dang</td>
+            <td>8</td>
+            <td>10111100</td>
+            <td>83</td>
+            <td>12 11 </td>
+            <td>lm</td>
+        </tr>
+        <tr>
+            <td>shu</td>
+            <td>9</td>
+            <td>101111010</td>
+            <td>42</td>
+            <td>10 7 1 </td>
+            <td>bhk</td>
+        </tr>
+        <tr>
+            <td>yue</td>
+            <td>9</td>
+            <td>101111011</td>
+            <td>42</td>
+            <td>11 7 1 </td>
+            <td>bhl</td>
+        </tr>
+        <tr>
+            <td>biao</td>
+            <td>10</td>
+            <td>1011111000</td>
+            <td>21</td>
+            <td>8 15 2 </td>
+            <td>cpi</td>
+        </tr>
+        <tr>
+            <td>po</td>
+            <td>10</td>
+            <td>1011111001</td>
+            <td>21</td>
+            <td>9 15 2 </td>
+            <td>cpj</td>
+        </tr>
+        <tr>
+            <td>tiao</td>
+            <td>9</td>
+            <td>101111101</td>
+            <td>42</td>
+            <td>13 7 1 </td>
+            <td>bhn</td>
+        </tr>
+        <tr>
+            <td>nei</td>
+            <td>10</td>
+            <td>1011111100</td>
+            <td>21</td>
+            <td>12 15 2 </td>
+            <td>cpm</td>
+        </tr>
+        <tr>
+            <td>mao</td>
+            <td>11</td>
+            <td>10111111010</td>
+            <td>11</td>
+            <td>10 15 5 </td>
+            <td>fpk</td>
+        </tr>
+        <tr>
+            <td>luo</td>
+            <td>11</td>
+            <td>10111111011</td>
+            <td>11</td>
+            <td>11 15 5 </td>
+            <td>fpl</td>
+        </tr>
+        <tr>
+            <td>cun</td>
+            <td>9</td>
+            <td>101111111</td>
+            <td>43</td>
+            <td>15 7 1 </td>
+            <td>bhp</td>
+        </tr>
+        <tr>
+            <td>de</td>
+            <td>4</td>
+            <td>1100</td>
+            <td>1392</td>
+            <td>12 </td>
+            <td>m</td>
+        </tr>
+        <tr>
+            <td>qie</td>
+            <td>8</td>
+            <td>11010000</td>
+            <td>87</td>
+            <td>0 13 </td>
+            <td>na</td>
+        </tr>
+        <tr>
+            <td>jin</td>
+            <td>8</td>
+            <td>11010001</td>
+            <td>87</td>
+            <td>1 13 </td>
+            <td>nb</td>
+        </tr>
+        <tr>
+            <td>na</td>
+            <td>9</td>
+            <td>110100100</td>
+            <td>43</td>
+            <td>4 10 1 </td>
+            <td>bke</td>
+        </tr>
+        <tr>
+            <td>jue</td>
+            <td>10</td>
+            <td>1101001010</td>
+            <td>22</td>
+            <td>10 4 3 </td>
+            <td>dek</td>
+        </tr>
+        <tr>
+            <td>zhen</td>
+            <td>10</td>
+            <td>1101001011</td>
+            <td>22</td>
+            <td>11 4 3 </td>
+            <td>del</td>
+        </tr>
+        <tr>
+            <td>suo</td>
+            <td>8</td>
+            <td>11010011</td>
+            <td>87</td>
+            <td>3 13 </td>
+            <td>nd</td>
+        </tr>
+        <tr>
+            <td>gan</td>
+            <td>11</td>
+            <td>11010100000</td>
+            <td>11</td>
+            <td>0 10 6 </td>
+            <td>gka</td>
+        </tr>
+        <tr>
+            <td>chun</td>
+            <td>11</td>
+            <td>11010100001</td>
+            <td>11</td>
+            <td>1 10 6 </td>
+            <td>gkb</td>
+        </tr>
+        <tr>
+            <td>wan</td>
+            <td>10</td>
+            <td>1101010001</td>
+            <td>22</td>
+            <td>1 5 3 </td>
+            <td>dfb</td>
+        </tr>
+        <tr>
+            <td>si</td>
+            <td>9</td>
+            <td>110101001</td>
+            <td>44</td>
+            <td>9 10 1 </td>
+            <td>bkj</td>
+        </tr>
+        <tr>
+            <td>jia</td>
+            <td>8</td>
+            <td>11010101</td>
+            <td>88</td>
+            <td>5 13 </td>
+            <td>nf</td>
+        </tr>
+        <tr>
+            <td>le</td>
+            <td>7</td>
+            <td>1101011</td>
+            <td>176</td>
+            <td>11 6 </td>
+            <td>gl</td>
+        </tr>
+        <tr>
+            <td>zhi</td>
+            <td>6</td>
+            <td>110110</td>
+            <td>352</td>
+            <td>6 3 </td>
+            <td>dg</td>
+        </tr>
+        <tr>
+            <td>zi</td>
+            <td>6</td>
+            <td>110111</td>
+            <td>357</td>
+            <td>7 3 </td>
+            <td>dh</td>
+        </tr>
+        <tr>
+            <td>shi</td>
+            <td>5</td>
+            <td>11100</td>
+            <td>731</td>
+            <td>12 1 </td>
+            <td>bm</td>
+        </tr>
+        <tr>
+            <td>jing</td>
+            <td>8</td>
+            <td>11101000</td>
+            <td>88</td>
+            <td>8 14 </td>
+            <td>oi</td>
+        </tr>
+        <tr>
+            <td>ru</td>
+            <td>10</td>
+            <td>1110100100</td>
+            <td>22</td>
+            <td>4 10 3 </td>
+            <td>dke</td>
+        </tr>
+        <tr>
+            <td>tui</td>
+            <td>11</td>
+            <td>11101001010</td>
+            <td>11</td>
+            <td>10 4 7 </td>
+            <td>hek</td>
+        </tr>
+        <tr>
+            <td>e</td>
+            <td>12</td>
+            <td>111010010110</td>
+            <td>6</td>
+            <td>6 9 14 </td>
+            <td>ojg</td>
+        </tr>
+        <tr>
+            <td>gen</td>
+            <td>12</td>
+            <td>111010010111</td>
+            <td>6</td>
+            <td>7 9 14 </td>
+            <td>ojh</td>
+        </tr>
+        <tr>
+            <td>xue</td>
+            <td>9</td>
+            <td>111010011</td>
+            <td>45</td>
+            <td>3 13 1 </td>
+            <td>bnd</td>
+        </tr>
+        <tr>
+            <td>dai</td>
+            <td>8</td>
+            <td>11101010</td>
+            <td>90</td>
+            <td>10 14 </td>
+            <td>ok</td>
+        </tr>
+        <tr>
+            <td>dou</td>
+            <td>9</td>
+            <td>111010110</td>
+            <td>45</td>
+            <td>6 13 1 </td>
+            <td>bng</td>
+        </tr>
+        <tr>
+            <td>gui</td>
+            <td>10</td>
+            <td>1110101110</td>
+            <td>23</td>
+            <td>14 10 3 </td>
+            <td>dko</td>
+        </tr>
+        <tr>
+            <td>mai</td>
+            <td>10</td>
+            <td>1110101111</td>
+            <td>23</td>
+            <td>15 10 3 </td>
+            <td>dkp</td>
+        </tr>
+        <tr>
+            <td>lao</td>
+            <td>9</td>
+            <td>111011000</td>
+            <td>46</td>
+            <td>8 13 1 </td>
+            <td>bni</td>
+        </tr>
+        <tr>
+            <td>quan</td>
+            <td>9</td>
+            <td>111011001</td>
+            <td>47</td>
+            <td>9 13 1 </td>
+            <td>bnj</td>
+        </tr>
+        <tr>
+            <td>yao</td>
+            <td>8</td>
+            <td>11101101</td>
+            <td>93</td>
+            <td>13 14 </td>
+            <td>on</td>
+        </tr>
+        <tr>
+            <td>zhao</td>
+            <td>9</td>
+            <td>111011100</td>
+            <td>47</td>
+            <td>12 13 1 </td>
+            <td>bnm</td>
+        </tr>
+        <tr>
+            <td>huan</td>
+            <td>9</td>
+            <td>111011101</td>
+            <td>47</td>
+            <td>13 13 1 </td>
+            <td>bnn</td>
+        </tr>
+        <tr>
+            <td>xi</td>
+            <td>8</td>
+            <td>11101111</td>
+            <td>95</td>
+            <td>15 14 </td>
+            <td>op</td>
+        </tr>
+        <tr>
+            <td>ci</td>
+            <td>9</td>
+            <td>111100000</td>
+            <td>48</td>
+            <td>0 14 1 </td>
+            <td>boa</td>
+        </tr>
+        <tr>
+            <td>mei</td>
+            <td>9</td>
+            <td>111100001</td>
+            <td>48</td>
+            <td>1 14 1 </td>
+            <td>bob</td>
+        </tr>
+        <tr>
+            <td>ping</td>
+            <td>11</td>
+            <td>11110001000</td>
+            <td>12</td>
+            <td>8 8 7 </td>
+            <td>hii</td>
+        </tr>
+        <tr>
+            <td>tan</td>
+            <td>11</td>
+            <td>11110001001</td>
+            <td>12</td>
+            <td>9 8 7 </td>
+            <td>hij</td>
+        </tr>
+        <tr>
+            <td>can</td>
+            <td>13</td>
+            <td>1111000101000</td>
+            <td>3</td>
+            <td>8 2 14 1 </td>
+            <td>boci</td>
+        </tr>
+        <tr>
+            <td>hun</td>
+            <td>13</td>
+            <td>1111000101001</td>
+            <td>3</td>
+            <td>9 2 14 1 </td>
+            <td>bocj</td>
+        </tr>
+        <tr>
+            <td>tie</td>
+            <td>13</td>
+            <td>1111000101010</td>
+            <td>3</td>
+            <td>10 2 14 1 </td>
+            <td>bock</td>
+        </tr>
+        <tr>
+            <td>kun</td>
+            <td>13</td>
+            <td>1111000101011</td>
+            <td>3</td>
+            <td>11 2 14 1 </td>
+            <td>bocl</td>
+        </tr>
+        <tr>
+            <td>xiu</td>
+            <td>13</td>
+            <td>1111000101100</td>
+            <td>3</td>
+            <td>12 2 14 1 </td>
+            <td>bocm</td>
+        </tr>
+        <tr>
+            <td>chen</td>
+            <td>13</td>
+            <td>1111000101101</td>
+            <td>3</td>
+            <td>13 2 14 1 </td>
+            <td>bocn</td>
+        </tr>
+        <tr>
+            <td>chou</td>
+            <td>13</td>
+            <td>1111000101110</td>
+            <td>3</td>
+            <td>14 2 14 1 </td>
+            <td>boco</td>
+        </tr>
+        <tr>
+            <td>mang</td>
+            <td>13</td>
+            <td>1111000101111</td>
+            <td>3</td>
+            <td>15 2 14 1 </td>
+            <td>bocp</td>
+        </tr>
+        <tr>
+            <td>chuang</td>
+            <td>11</td>
+            <td>11110001100</td>
+            <td>12</td>
+            <td>12 8 7 </td>
+            <td>him</td>
+        </tr>
+        <tr>
+            <td>lie</td>
+            <td>11</td>
+            <td>11110001101</td>
+            <td>12</td>
+            <td>13 8 7 </td>
+            <td>hin</td>
+        </tr>
+        <tr>
+            <td>qiang</td>
+            <td>11</td>
+            <td>11110001110</td>
+            <td>12</td>
+            <td>14 8 7 </td>
+            <td>hio</td>
+        </tr>
+        <tr>
+            <td>pu</td>
+            <td>11</td>
+            <td>11110001111</td>
+            <td>12</td>
+            <td>15 8 7 </td>
+            <td>hip</td>
+        </tr>
+        <tr>
+            <td>zha</td>
+            <td>12</td>
+            <td>111100100000</td>
+            <td>6</td>
+            <td>0 2 15 </td>
+            <td>pca</td>
+        </tr>
+        <tr>
+            <td>ai</td>
+            <td>12</td>
+            <td>111100100001</td>
+            <td>6</td>
+            <td>1 2 15 </td>
+            <td>pcb</td>
+        </tr>
+        <tr>
+            <td>chao</td>
+            <td>12</td>
+            <td>111100100010</td>
+            <td>6</td>
+            <td>2 2 15 </td>
+            <td>pcc</td>
+        </tr>
+        <tr>
+            <td>huai</td>
+            <td>12</td>
+            <td>111100100011</td>
+            <td>6</td>
+            <td>3 2 15 </td>
+            <td>pcd</td>
+        </tr>
+        <tr>
+            <td>sui</td>
+            <td>10</td>
+            <td>1111001001</td>
+            <td>24</td>
+            <td>9 12 3 </td>
+            <td>dmj</td>
+        </tr>
+        <tr>
+            <td>juan</td>
+            <td>13</td>
+            <td>1111001010000</td>
+            <td>3</td>
+            <td>0 5 14 1 </td>
+            <td>bofa</td>
+        </tr>
+        <tr>
+            <td>tang</td>
+            <td>13</td>
+            <td>1111001010001</td>
+            <td>3</td>
+            <td>1 5 14 1 </td>
+            <td>bofb</td>
+        </tr>
+        <tr>
+            <td>heng</td>
+            <td>12</td>
+            <td>111100101001</td>
+            <td>6</td>
+            <td>9 2 15 </td>
+            <td>pcj</td>
+        </tr>
+        <tr>
+            <td>cao</td>
+            <td>13</td>
+            <td>1111001010100</td>
+            <td>3</td>
+            <td>4 5 14 1 </td>
+            <td>bofe</td>
+        </tr>
+        <tr>
+            <td>tou</td>
+            <td>13</td>
+            <td>1111001010101</td>
+            <td>3</td>
+            <td>5 5 14 1 </td>
+            <td>boff</td>
+        </tr>
+        <tr>
+            <td>long</td>
+            <td>13</td>
+            <td>1111001010110</td>
+            <td>3</td>
+            <td>6 5 14 1 </td>
+            <td>bofg</td>
+        </tr>
+        <tr>
+            <td>tuan</td>
+            <td>13</td>
+            <td>1111001010111</td>
+            <td>3</td>
+            <td>7 5 14 1 </td>
+            <td>bofh</td>
+        </tr>
+        <tr>
+            <td>shan</td>
+            <td>12</td>
+            <td>111100101100</td>
+            <td>6</td>
+            <td>12 2 15 </td>
+            <td>pcm</td>
+        </tr>
+        <tr>
+            <td>nan</td>
+            <td>12</td>
+            <td>111100101101</td>
+            <td>6</td>
+            <td>13 2 15 </td>
+            <td>pcn</td>
+        </tr>
+        <tr>
+            <td>kang</td>
+            <td>12</td>
+            <td>111100101110</td>
+            <td>6</td>
+            <td>14 2 15 </td>
+            <td>pco</td>
+        </tr>
+        <tr>
+            <td>cu</td>
+            <td>12</td>
+            <td>111100101111</td>
+            <td>6</td>
+            <td>15 2 15 </td>
+            <td>pcp</td>
+        </tr>
+        <tr>
+            <td>xiang</td>
+            <td>8</td>
+            <td>11110011</td>
+            <td>97</td>
+            <td>3 15 </td>
+            <td>pd</td>
+        </tr>
+        <tr>
+            <td>zheng</td>
+            <td>7</td>
+            <td>1111010</td>
+            <td>193</td>
+            <td>10 7 </td>
+            <td>hk</td>
+        </tr>
+        <tr>
+            <td>du</td>
+            <td>8</td>
+            <td>11110110</td>
+            <td>97</td>
+            <td>6 15 </td>
+            <td>pg</td>
+        </tr>
+        <tr>
+            <td>shuo</td>
+            <td>9</td>
+            <td>111101110</td>
+            <td>49</td>
+            <td>14 14 1 </td>
+            <td>boo</td>
+        </tr>
+        <tr>
+            <td>mian</td>
+            <td>9</td>
+            <td>111101111</td>
+            <td>49</td>
+            <td>15 14 1 </td>
+            <td>bop</td>
+        </tr>
+        <tr>
+            <td>guo</td>
+            <td>7</td>
+            <td>1111100</td>
+            <td>195</td>
+            <td>12 7 </td>
+            <td>hm</td>
+        </tr>
+        <tr>
+            <td>xin</td>
+            <td>9</td>
+            <td>111110100</td>
+            <td>49</td>
+            <td>4 15 1 </td>
+            <td>bpe</td>
+        </tr>
+        <tr>
+            <td>pin</td>
+            <td>10</td>
+            <td>1111101010</td>
+            <td>25</td>
+            <td>10 14 3 </td>
+            <td>dok</td>
+        </tr>
+        <tr>
+            <td>kai</td>
+            <td>10</td>
+            <td>1111101011</td>
+            <td>25</td>
+            <td>11 14 3 </td>
+            <td>dol</td>
+        </tr>
+        <tr>
+            <td>ke</td>
+            <td>9</td>
+            <td>111110110</td>
+            <td>50</td>
+            <td>6 15 1 </td>
+            <td>bpg</td>
+        </tr>
+        <tr>
+            <td>wen</td>
+            <td>9</td>
+            <td>111110111</td>
+            <td>50</td>
+            <td>7 15 1 </td>
+            <td>bph</td>
+        </tr>
+        <tr>
+            <td>bian</td>
+            <td>9</td>
+            <td>111111000</td>
+            <td>50</td>
+            <td>8 15 1 </td>
+            <td>bpi</td>
+        </tr>
+        <tr>
+            <td>fu</td>
+            <td>9</td>
+            <td>111111001</td>
+            <td>50</td>
+            <td>9 15 1 </td>
+            <td>bpj</td>
+        </tr>
+        <tr>
+            <td>nong</td>
+            <td>10</td>
+            <td>1111110100</td>
+            <td>25</td>
+            <td>4 15 3 </td>
+            <td>dpe</td>
+        </tr>
+        <tr>
+            <td>bo</td>
+            <td>10</td>
+            <td>1111110101</td>
+            <td>25</td>
+            <td>5 15 3 </td>
+            <td>dpf</td>
+        </tr>
+        <tr>
+            <td>dian</td>
+            <td>11</td>
+            <td>11111101100</td>
+            <td>12</td>
+            <td>12 14 7 </td>
+            <td>hom</td>
+        </tr>
+        <tr>
+            <td>meng</td>
+            <td>12</td>
+            <td>111111011010</td>
+            <td>6</td>
+            <td>10 13 15 </td>
+            <td>pnk</td>
+        </tr>
+        <tr>
+            <td>pei</td>
+            <td>12</td>
+            <td>111111011011</td>
+            <td>7</td>
+            <td>11 13 15 </td>
+            <td>pnl</td>
+        </tr>
+        <tr>
+            <td>qian</td>
+            <td>10</td>
+            <td>1111110111</td>
+            <td>25</td>
+            <td>7 15 3 </td>
+            <td>dph</td>
+        </tr>
+        <tr>
+            <td>fen</td>
+            <td>9</td>
+            <td>111111100</td>
+            <td>51</td>
+            <td>12 15 1 </td>
+            <td>bpm</td>
+        </tr>
+        <tr>
+            <td>yang</td>
+            <td>9</td>
+            <td>111111101</td>
+            <td>51</td>
+            <td>13 15 1 </td>
+            <td>bpn</td>
+        </tr>
+        <tr>
+            <td>shen</td>
+            <td>9</td>
+            <td>111111110</td>
+            <td>51</td>
+            <td>14 15 1 </td>
+            <td>bpo</td>
+        </tr>
+        <tr>
+            <td>ti</td>
+            <td>9</td>
+            <td>111111111</td>
+            <td>51</td>
+            <td>15 15 1 </td>
+            <td>bpp</td>
+        </tr>
+    </tbody>
+</table>
+        </div>
+
+
+</body>
+</html>
